@@ -4,7 +4,6 @@ import '../kml/Itinerary.kml'
 import '../kml/Zealand.kml'
 import '@global-scripts/adder'
 
-
 // Log message to console
 console.log('Its finished!!')
 

@@ -5,6 +5,9 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const sassResourcesLoader = require('sass-resources-loader')
 const extractLoader = require('extract-loader')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const glob = require('glob')
 // require('postcss.config.js')
 
 const workingPath = process.cwd()
@@ -17,10 +20,10 @@ console.log(process.env.NODE_ENV)
 module.exports = {
   entry: {
     main: [
-      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000', 
-    './src/scripts/index.js', 
-    './src/styles/style.scss'
-  ]
+      'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+      './src/scripts/index.js',
+      './src/styles/style.scss'
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -91,16 +94,33 @@ module.exports = {
                 })
               ]
             }
-          }, {
+          }, 
+          {
             loader: 'sass-loader'
           },
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: './src/styles/**/*.scss'
+              // These SCSS sources will be imported into every required SCSS file.
+              // This prevents the manual importing of configuration files in every SCSS file.
+              // See: https://github.com/shakacode/sass-resources-loader
+              resources: `${stylesPath}/**/config.scss`
             }
           }
         ]
+      },
+      {
+        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.wav$|\.mp3$/,
+        use:
+        {
+          loader: 'file-loader',
+          options: {
+            emitFile: true,
+            name: '[name].[ext]', // <-- retain original file name
+            publicPath: './resources',
+            outputPath: 'resources/'
+          }
+        }
       },
       {
         test: /\.svg(\?.*)?$/, // This will match example.svg example.svg?param=value

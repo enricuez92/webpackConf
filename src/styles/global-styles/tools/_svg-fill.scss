@@ -1,0 +1,13 @@
+/*
+SVGs
+----
+ */
+
+// See: https://github.com/JetBrains/svg-mixer/tree/master/packages/svg-transform-loader#usage-with-css-loader
+@mixin svg-background-image-with-fill($url, $color) {
+  $base-color: str-slice(inspect($color), 2);
+
+  background-image: url('#{$url}?fill=%23#{$base-color}%20path');
+  background-repeat: no-repeat;
+}
+

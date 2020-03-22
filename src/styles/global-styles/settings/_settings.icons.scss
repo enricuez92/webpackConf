@@ -1,0 +1,35 @@
+
+/*
+ICON
+---------
+Icon color variations
+*/
+
+@each $name, $color in $color-ui {
+  svg.cla-icon--color-#{$name} path,
+  i.cla-icon--color-#{$name} {
+    color: $color;
+    fill: $color;
+  }
+}
+
+i.small  {
+    font-size: 2rem;
+}
+
+i.medium {
+    font-size: 3rem;
+}
+
+i.large {
+    font-size: 4rem;
+}
+
+ 
+.img {
+  @include svg-background-image-with-fill('~@resources/noun_team.svg', $color-primary );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 22rem;
+  height: 20rem;
+}

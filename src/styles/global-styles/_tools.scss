@@ -1,0 +1,12 @@
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// font-awesome
+@import 'tools/font-awesome';
+
+// svg-fill
+@import 'tools/svg-fill';
+
+// icomoon
+$icomoon-font-path: "~@resources/icomoon";
+@import 'tools/icomoon';

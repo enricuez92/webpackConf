@@ -1,0 +1,89 @@
+
+/*
+FONT STACKS
+-----------
+Find safe font stacks here: https://www.cssfontstack.com/
+ */
+
+$font-stack-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-serif: Georgia, Times, 'Times New Roman', serif;
+
+
+/*
+FONT WEIGHTS
+------------
+These are all available font weights.
+ */
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-book: 400;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+$font-weight-ultralight: $font-weight-extra-light;
+$font-weight-regular: $font-weight-normal;
+$font-weight-roman: $font-weight-normal;
+$font-weight-demibold: $font-weight-semibold;
+$font-weight-ultrabold: $font-weight-extrabold;
+$font-weight-heavy: $font-weight-black;
+
+
+/*
+FONT CONFIG
+-----------
+Set fonts based on their usage.
+ */
+
+$font-stack-headings: $font-stack-sans-serif;
+$font-stack-body: $font-stack-sans-serif;
+
+
+/*
+FONT SIZES
+----------
+Responsive font sizes set on the root html element. Use with the rem unit.
+*/
+
+$font-size-body: 1.4rem;
+
+$font-size-heading-hero: (
+  mobile: 4.8rem,
+  desktop: 5.6rem,
+);
+
+$font-size-heading-huge: (
+  mobile: 4rem,
+  desktop: 4.8rem,
+);
+
+$font-size-heading-large: (
+  mobile: 2.4rem,
+  desktop: 3.2rem
+);
+
+$font-size-heading-medium: (
+  mobile: 2rem,
+  desktop: 2.4rem
+);
+
+$font-size-heading-small: (
+  mobile: 1.8rem,
+  desktop: 2rem
+);
+
+$font-size-heading-tiny: (
+  mobile: 1.6rem,
+  desktop: 1.6rem
+);
+
+
+/*
+LINE HEIGHTS
+------------
+ */
+
+$font-line-height-heading: 1.25;

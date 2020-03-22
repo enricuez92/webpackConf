@@ -1,0 +1,43 @@
+
+/*
+COLOR PALETTE
+-------------
+Define all colors by their actual color name.
+
+Color names: http://chir.ag/projects/name-that-color/#FFFFFF
+ */
+
+$color-white: #fff;
+$color-black: #000;
+
+// color theme set for white label components; Note: Not to be removed
+$color-primary: #007bff;
+$color-secondary: #343a40;
+$color-tertiary: #6c757d;
+$color-disabled: #c6c6c6;
+$color-disabled-font: #7b7a77;
+
+
+/*
+COLOR CONFIG
+------------
+Set colors based on their usage.
+ */
+
+$color-background: $color-white;
+$color-text: $color-black;
+
+
+/*
+UI COLORS
+---------
+Colors that can be used throughout the UI, such as background colors or text
+colors. The key will map to the class name.
+
+Example: 'white' => .example--white
+ */
+
+$color-ui: (
+  'white': $color-white,
+  'black': $color-black
+);

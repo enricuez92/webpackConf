@@ -1,0 +1,16 @@
+/*
+ TOOLS
+ -----
+ Site-wide mixins and functions.
+*/
+
+@import '~@global-styles/global-styles/tools';
+
+/*
+SETTINGS
+--------
+Global variables, site-wide settings, config switches, etc.
+ */
+
+// Order matters here.
+@import '~@global-styles/global-styles/settings';
