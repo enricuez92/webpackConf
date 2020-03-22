@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Itinerary</name>
+    <description/>
+    <Style id="icon-25-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-25-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-25-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF0000-5000-nodesc-normal">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FF0000-5000-nodesc-highlight">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>7.5</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FF0000-5000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF0000-5000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF0000-5000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-CC0000-3000-115-nodesc-normal">
+      <LineStyle>
+        <color>ff0000cc</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>730000cc</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-CC0000-3000-115-nodesc-highlight">
+      <LineStyle>
+        <color>ff0000cc</color>
+        <width>4.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>730000cc</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-CC0000-3000-115-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-CC0000-3000-115-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-CC0000-3000-115-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Walking itinerary</name>
+        <styleUrl>#line-FF0000-5000-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -3.72703,40.443588,0
+            -3.727974,40.44803,0
+            -3.72718,40.448846,0
+            -3.727459,40.450528,0
+            -3.726472,40.450773,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Bus Stop</name>
+        <styleUrl>#icon-25-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -3.727026,40.443452,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bus Stop</name>
+        <styleUrl>#icon-25-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -3.727391,40.449821,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Facultad de CC. Físicas</name>
+        <styleUrl>#poly-CC0000-3000-115-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>3</tessellate>
+              <coordinates>
+                -3.727655,40.451357,0
+                -3.72752,40.450581,0
+                -3.725283,40.450814,0
+                -3.725412,40.451606,0
+                -3.727064,40.451422,0
+                -3.727027,40.451292,0
+                -3.727129,40.4513,0
+                -3.727118,40.451418,0
+                -3.727655,40.451357,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

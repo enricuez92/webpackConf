@@ -1,0 +1,16 @@
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// font-awesome
+$fa-font-path: "~@resources/webfonts";
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/brands';
+
+// icomoon
+$icomoon-font-path: "~@resources/icomoon";
+@import '~@global-styles/icomoon/icomoon';
+
+// google-fonts
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
